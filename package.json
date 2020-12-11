@@ -5,8 +5,14 @@
   "repository": "git@gitlab.com:asinduvg/indecision-app.git",
   "author": "Asindu Vidanagamachchi <ashvg.dev@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --watch",
+    "build-babel": "babel src/playground/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+  },
   "dependencies": {
+    "babel-cli": "6.24.1",
     "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1"
+    "babel-preset-react": "6.24.1",
+    "webpack": "3.1.0"
   }
 }
