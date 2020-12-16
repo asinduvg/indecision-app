@@ -5,7 +5,7 @@ const Option = props => (
         <p className='option__text'>{props.count}. {props.item}</p>
         <button className='button button--link'
                 onClick={(e) => {
-                    props.handleDeleteOption(props.item)
+                    props.handleDeleteOption(props.item);
                 }}
         >
             remove

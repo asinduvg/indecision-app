@@ -20,7 +20,7 @@ export default class IndecisionApp extends React.Component {
         this.setState(prevState => {
             const index = prevState.options.indexOf(option);
             return {
-                options: prevState.options.splice(index, 1)
+                options: prevState.options.filter((item, i) => i !== index)
             }
         });
     }
