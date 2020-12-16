@@ -1,8 +1,8 @@
 import React from "react";
 
 const Option = props => (
-    <div>
-        {props.item}
+    <div className='option'>
+        <p className='option__text'>{props.count}. {props.item}</p>
         <button className='button button--link'
                 onClick={(e) => {
                     props.handleDeleteOption(props.item)
