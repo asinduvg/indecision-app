@@ -13,7 +13,7 @@ pages:
   script:
     - CI=false npm run build
     - mkdir .public
-    - cp public .public
+    - cp -r public .public
     - mv .public public
 
   artifacts:
