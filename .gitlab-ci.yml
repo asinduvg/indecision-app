@@ -13,11 +13,11 @@ pages:
   script:
     - CI=false npm run build
     - mkdir .public
-    - cp -r * .public
+    - cp public .public
     - mv .public public
 
   artifacts:
     paths:
-      - public/public
+      - public
   only:
     - master
